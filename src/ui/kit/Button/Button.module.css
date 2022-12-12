@@ -1,0 +1,16 @@
+.root{
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 2px solid var(--second-background-color);
+    background: none;
+    color: var(--light-background-color);
+    cursor:pointer;
+    font-family: var(--font-red-hat);
+
+    &:hover{
+        color: var(--second-background-color);
+        box-shadow: 1px 1px 2px var(--main-background-color);
+    }
+}

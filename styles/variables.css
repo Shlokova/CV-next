@@ -1,0 +1,11 @@
+:root{
+    --font-train-one: 'Train One', monospace;
+    --font-cutive: 'Cutive Mono', monospace;
+    --font-monoton:  'Monoton', monospace;
+    --font-red-hat: 'Red Hat Mono', monospace;
+    --default-background-color: #171717;
+    --border-background-color: #222222;
+    --main-background-color: #333333;
+    --second-background-color: #CD7537;
+    --light-background-color: #E3E2D8;
+}

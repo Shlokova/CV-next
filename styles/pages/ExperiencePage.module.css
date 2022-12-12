@@ -1,0 +1,105 @@
+.root{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+
+    @media (--mobile-l) {
+        height: 100%;
+        grid-template-rows:auto;
+        grid-template-columns: max-content 1fr;
+    }
+}
+.title{
+    font-family: var(--font-monoton);
+    color: var(--default-background-color);
+    background: var(--second-background-color);
+    font-size: 34px;
+    padding-left: 20px;
+    border-bottom: 10px solid var(--main-background-color);
+    @media (--mobile-l) {
+        padding-left: 0;
+        writing-mode: vertical-rl;
+        text-align: center;
+        transform: rotate(180deg);
+        border-bottom: none;
+        border-left: 10px solid var(--main-background-color);
+        opacity: 0.7;
+        font-size: 52px;
+    }
+    @media (--desktop-m) {
+        font-size: 60px;
+    }
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--light-background-color);
+}
+
+.informationItem{
+    background: var(--border-background-color);
+    padding: 20px;
+    display: grid;
+    grid-gap: 4px;
+
+    align-items: center;
+    .about{
+        background: var(--default-background-color);
+    }
+    &:nth-child(odd){
+        background: var(--default-background-color);
+        .about{
+            background: var(--border-background-color);
+        }
+    }
+
+    @media (--mobile-l) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+.date{
+    font-family: var(--font-monoton);
+    font-size: 24px;
+    text-decoration: underline 2px solid var(--light-background-color);
+    text-underline-offset: 6px;
+    width: max-content;
+    text-transform: uppercase;
+    max-width: 300px;
+
+    @media (--mobile-l) {
+        font-size: 32px;
+        border-bottom:none;
+    }
+    @media (--desktop-m) {
+        max-width: none;
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--font-red-hat);
+    text-align: start;
+    padding: 12px;
+}
+.workplace{
+    font-size: 18px;
+    color: var(--second-background-color);
+    @media (--mobile-l) {
+        font-size: 28px;
+    }
+}
+
+.place{
+    font-family: var(--font-cutive);
+    color: #a1a1a1;
+}
+.command{
+    margin-top: 10px;
+}

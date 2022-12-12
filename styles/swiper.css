@@ -1,0 +1,11 @@
+.swiper-3d .swiper-slide-shadow-right{
+    background-image: linear-gradient(to right, rgba(23, 23, 23, 0.87),#171717);
+}
+
+.swiper-3d .swiper-slide-shadow-left{
+    background-image: linear-gradient(to left, rgba(23, 23, 23, 0.87),#171717);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--second-background-color);
+}

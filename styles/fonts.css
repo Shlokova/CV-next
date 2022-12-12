@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Train One';
+    src: url('fonts/TrainOne/TrainOne-Regular.eot');
+    src: url('fonts/TrainOne/TrainOne-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TrainOne/TrainOne-Regular.woff2') format('woff2'),
+    url('fonts/TrainOne/TrainOne-Regular.woff') format('woff'),
+    url('fonts/TrainOne/TrainOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src: url('fonts/Monoton/Monoton-Regular.eot');
+    src: url('fonts/Monoton/Monoton-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Monoton/Monoton-Regular.woff2') format('woff2'),
+    url('fonts/Monoton/Monoton-Regular.woff') format('woff'),
+    url('fonts/Monoton/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Mono';
+    src: url('fonts/RedHatMono/RedHatMono-Regular.eot');
+    src: url('fonts/RedHatMono/RedHatMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RedHatMono/RedHatMono-Regular.woff2') format('woff2'),
+    url('fonts/RedHatMono/RedHatMono-Regular.woff') format('woff'),
+    url('fonts/RedHatMono/RedHatMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cutive Mono';
+    src: url('fonts/Cutive/CutiveMono-Regular.eot');
+    src: url('fonts/Cutive/CutiveMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Cutive/CutiveMono-Regular.woff2') format('woff2'),
+    url('fonts/Cutive/CutiveMono-Regular.woff') format('woff'),
+    url('fonts/Cutive/CutiveMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

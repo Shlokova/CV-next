@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container::after {
+    background-color: var(--second-background-color);
+    content: '';
+    position: absolute;
+    left: 100px;
+    width: 8px;
+    height: 100%;
+    @media (--mobile-l) {
+        left: calc(50% - 4px);
+        width: 8px;
+    }
+}
