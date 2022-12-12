@@ -1,10 +1,10 @@
-import {Html, Head, Main, NextScript} from 'next/document';
+import {Html, Main, Head, NextScript} from 'next/document';
+import React from 'react';
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Shlokova Anna</title>
         <meta name="description" content={'frontend developer'} />
         <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
         <meta property="og:image" content="../share.png" />
