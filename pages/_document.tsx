@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <meta name="description" content={'frontend developer'} />
         <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
-        <meta property="og:image" content="../share.png" />
+        <meta property="og:image" content="/static/share.webp" />
         <meta property="og:url" content="https://shlokova-cv.web.app/" />
         <meta property="og:title" content="Shlokova Anna" />
         <meta property="og:description" content="frontend developer" />

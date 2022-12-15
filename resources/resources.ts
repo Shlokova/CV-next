@@ -216,7 +216,7 @@ export const resources = {
       description:
         'In my free time I like to draw. This is one of the reasons why I chose front-end development as my\n' +
         '            profession. You can see some of my work on ',
-      image: '/insta.webp',
+      image: '/static/extra/insta.webp',
       link: {label: 'Instagram', href: 'https://www.instagram.com/or_ann_ge/?igshid=vfi580tf99gu'},
     },
     article: {
