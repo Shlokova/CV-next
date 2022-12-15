@@ -13,6 +13,7 @@ export default function Document() {
         <meta property="og:description" content="frontend developer" />
         <meta property="og:site_name" content="CV" />
         <meta property="og:type" content="website" />
+        <link rel="manifest" href="/static/manifest.json" />
       </Head>
       <body>
         <Main />

@@ -10,7 +10,7 @@ import {RightDiagram} from '@/ui/kit/Diagram/fragments/RightDiagram';
 import {LeftDiagram} from '@/ui/kit/Diagram/fragments/LeftDiagram';
 
 const SkillsPage: React.FC = () => {
-  const isMobileL = useMedia(mobileLargeMediaQuery);
+  const isMobileL = useMedia(mobileLargeMediaQuery, false);
 
   return (
     <div className={s.root}>

@@ -10,6 +10,9 @@
         grid-template-rows:auto;
         grid-template-columns: max-content 1fr;
     }
+    @media (--desktop) {
+        height: 100vh;
+    }
 }
 .title{
     font-family: var(--font-monoton);
@@ -37,6 +40,9 @@
     display: grid;
     grid-template-columns: 1fr;
     color: var(--light-background-color);
+    @media (--desktop) {
+        overflow: auto;
+    }
 }
 
 .informationItem{
@@ -96,10 +102,17 @@
     }
 }
 
-.place{
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post{
     font-family: var(--font-cutive);
     color: #a1a1a1;
 }
-.command{
-    margin-top: 10px;
+.tasks{
+    padding-left: 16px;
 }

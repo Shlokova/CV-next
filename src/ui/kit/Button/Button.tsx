@@ -7,12 +7,19 @@ type ButtonProps = PropsWithChildren & {
   className?: string;
   onClick?: () => void;
   href?: string;
+  download?: boolean;
 };
 
-export const Button: FC<ButtonProps> = ({className, onClick, children, href}) => {
+export const Button: FC<ButtonProps> = ({className, onClick, children, href, download}) => {
   if (href) {
     return (
-      <a href={href} className={classNames(s.root, className || '')} target={'_blank'} rel="noreferrer">
+      <a
+        href={href}
+        className={classNames(s.root, className || '')}
+        download={download}
+        target={'_blank'}
+        rel="noreferrer"
+      >
         {children}
       </a>
     );

@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/global.css';
 import {Layout} from '../src/ui/kit/Layout/Layout';
 import Head from 'next/head';
+import {ErrorBoundary} from '@/ui/common/ErrorBoundary/ErrorBoundary';
 
 export default function MyApp({Component, pageProps}: AppProps) {
   return (
@@ -10,9 +11,11 @@ export default function MyApp({Component, pageProps}: AppProps) {
       <Head>
         <title>Shlokova Anna</title>
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ErrorBoundary>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ErrorBoundary>
     </React.Fragment>
   );
 }

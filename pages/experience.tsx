@@ -12,9 +12,12 @@ const ExperiencePage: React.FC = () => {
             <div className={s.date}>{el.years}</div>
             <div className={s.about}>
               <div className={s.workplace}>{el.workplace}</div>
-              <div className={s.place}>{el.place}</div>
-              <div className={s.command}>{el.command}</div>
               <div className={s.post}>{el.post}</div>
+              <ul className={s.tasks}>
+                {el.tasks.map((task, id) => (
+                  <li key={id}>{task}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}

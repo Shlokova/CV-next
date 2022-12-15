@@ -1,27 +1,49 @@
 export const resources = {
-  about: {
+  navigation: {
     links: [
       {
-        img: '',
-        label: 'telegram',
-        href: '',
-      },
-      {
-        img: '',
+        img: '/static/contactInfo/gmail-black.svg',
         label: 'email',
-        href: '',
+        href: 'mailto:shlokova777@gmail.com',
       },
       {
-        img: '',
+        img: '/static/contactInfo/linkedin-black.svg',
         label: 'linkedIn',
-        href: '',
+        href: 'https://www.linkedin.com/in/anna-shlokova-2b5a99255/',
       },
       {
-        img: '',
+        img: '/static/contactInfo/telegram-black.svg',
+        label: 'telegram',
+        href: 'https://t.me/Shlokova',
+      },
+      {
+        img: '/static/contactInfo/github.svg',
         label: 'github',
-        href: '',
+        href: 'https://github.com/Shlokova/',
       },
     ],
+    menuIcon: '/static/navigation/menu.svg',
+    photo: '/static/navigation/mini-photo.webp',
+    name: 'Shlokova Anna',
+  },
+  about: {
+    title: 'Shlokova Anna',
+    subtitle: 'frontend developer',
+    image: '/static/about/photo.webp',
+    description:
+      'Sociable and hardworking front-end developer with 1 years of experience in website development. Highly skilled in HTML/CSS/JavaScript/React and working knowledge of Photoshop and Figma.',
+    buttonText: 'Download cv',
+    info: {
+      title: 'What I do',
+      information: [
+        'Implementing web design and development principles to build stable software.',
+        'Bringing mock-ups to life using HTML, CSS, JavaScript.',
+        'Collaborating closely with the team to support projects during all phases of delivery.',
+        'Building websites and apps that are responsive and usable.',
+        'Maintaining an organized workflow using a project management tool.',
+        'Testing to identify bugs and technical issues.',
+      ],
+    },
   },
   educationPage: {
     title: 'Education',
@@ -57,22 +79,35 @@ export const resources = {
     information: [
       {
         workplace: 'Modification of the public transport network',
-        place: ' Saint Petersburg',
-        command: 'university team',
+        tasks: [
+          'Implementation of a web application for visualizing changes in the public transport network',
+          'Development of functional elements',
+        ],
+        technology: ['JS', 'HTML', 'CSS', 'RestAPI'],
         post: 'frontend developer',
         years: 'July 2021',
       },
       {
         workplace: 'ITMO University ',
-        place: ' Saint Petersburg',
-        command: 'Educational analytics',
+        tasks: [
+          'Work on an application that displays real-time occupancy of premises',
+          'Creating a plugin for Grafana',
+          'Project refactoring',
+        ],
+        technology: ['React', 'Grafana', 'Vue', 'TypeScript', 'JS', 'SCSS', 'RestAPI'],
         post: 'frontend developer',
         years: 'February - July 2022',
       },
       {
         workplace: 'Tinkoff',
-        place: ' Saint Petersburg',
-        command: 'Special projects',
+        tasks: [
+          'Development of landing pages',
+          'Game web application development',
+          'Refactoring of old projects, with a change in the technological stack of the project',
+          'Support for production applications',
+          'Adding custom analytics to projects',
+        ],
+        technology: ['JS', 'TypeScript', 'React', 'PostCSS', 'NextJs', 'RestApi', 'Vue', 'MobX'],
         post: 'frontend developer',
         years: 'July 2022 - present',
       },
@@ -84,47 +119,47 @@ export const resources = {
       items: [
         {
           label: 'Reliable',
-          icon: '/softSkill/reliable.svg',
+          icon: '/static/softSkill/reliable.svg',
         },
         {
           label: 'Communicative',
-          icon: '/softSkill/communicative.svg',
+          icon: '/static/softSkill/communicative.svg',
         },
         {
           label: 'Creative',
-          icon: '/softSkill/creative.svg',
+          icon: '/static/softSkill/creative.svg',
         },
         {
           label: 'Adaptability',
-          icon: '/softSkill/adaptability.svg',
+          icon: '/static/softSkill/adaptability.svg',
         },
         {
           label: 'Hard-working',
-          icon: '/softSkill/hard-working.svg',
+          icon: '/static/softSkill/hard-working.svg',
         },
       ],
     },
     HardSkills: {
       title: 'Hard Skills',
       items: {
-        js: {label: 'JavaScript', percent: 60, icon: '/hardSkill/logo-js.svg'},
-        html: {label: 'HTML5', percent: 100, icon: '/hardSkill/logo-html.svg'},
-        css: {label: 'CSS3', percent: 70, icon: '/hardSkill/logo-css.svg'},
-        react: {label: 'React', percent: 60, icon: '/hardSkill/logo-react.svg'},
-        ts: {label: 'TypeScript', percent: 40, icon: '/hardSkill/logo-ts.svg'},
-        less: {label: 'LESS', percent: 40, icon: '/hardSkill/logo-less.svg'},
-        sass: {label: 'SASS', percent: 50, icon: '/hardSkill/logo-sass.svg'},
-        vue: {label: 'Vue', percent: 30, icon: '/hardSkill/logo-vue.svg'},
-        redax: {label: 'Redax', percent: 30, icon: '/hardSkill/logo-vue.svg'},
-        mobX: {label: 'MobX', percent: 30, icon: '/hardSkill/logo-vue.svg'},
-        nextJs: {label: 'NextJS', percent: 30, icon: '/hardSkill/logo-vue.svg'},
-        webpack: {label: 'Webpack', percent: 40, icon: '/hardSkill/logo-webpack.svg'},
-        git: {label: 'Git', percent: 60, icon: '/hardSkill/logo-git.svg'},
-        figma: {label: 'Figma', percent: 40, icon: '/hardSkill/logo-figma.svg'},
-        photoshop: {label: 'Adobe Photoshop', percent: 40, icon: '/hardSkill/logo-photoshop.svg'},
-        illustrator: {label: 'Adobe Illustrator', percent: 40, icon: '/hardSkill/logo-illustrator.svg'},
-        sql: {label: 'SQL', percent: 20, icon: '/hardSkill/logo-sql.svg'},
-        jira: {label: 'Jira', percent: 50, icon: '/hardSkill/logo-c.svg'},
+        js: {label: 'JavaScript', percent: 60, icon: '/static/hardSkill/logo-js.svg'},
+        html: {label: 'HTML5', percent: 100, icon: '/static/hardSkill/logo-html.svg'},
+        css: {label: 'CSS3', percent: 70, icon: '/static/hardSkill/logo-css.svg'},
+        react: {label: 'React', percent: 60, icon: '/static/hardSkill/logo-react.svg'},
+        ts: {label: 'TypeScript', percent: 40, icon: '/static/hardSkill/logo-ts.svg'},
+        less: {label: 'LESS', percent: 40, icon: '/static/hardSkill/logo-less.svg'},
+        sass: {label: 'SASS', percent: 50, icon: '/static/hardSkill/logo-sass.svg'},
+        vue: {label: 'Vue', percent: 30, icon: '/static/hardSkill/logo-vue.svg'},
+        redax: {label: 'Redax', percent: 30, icon: '/static/hardSkill/logo-vue.svg'},
+        mobX: {label: 'MobX', percent: 30, icon: '/static/hardSkill/logo-vue.svg'},
+        nextJs: {label: 'NextJS', percent: 30, icon: '/static/hardSkill/logo-vue.svg'},
+        webpack: {label: 'Webpack', percent: 40, icon: '/static/hardSkill/logo-webpack.svg'},
+        git: {label: 'Git', percent: 60, icon: '/static/hardSkill/logo-git.svg'},
+        figma: {label: 'Figma', percent: 40, icon: '/static/hardSkill/logo-figma.svg'},
+        photoshop: {label: 'Adobe Photoshop', percent: 40, icon: '/static/hardSkill/logo-photoshop.svg'},
+        illustrator: {label: 'Adobe Illustrator', percent: 40, icon: '/static/hardSkill/logo-illustrator.svg'},
+        sql: {label: 'SQL', percent: 20, icon: '/static/hardSkill/logo-sql.svg'},
+        jira: {label: 'Jira', percent: 50, icon: '/static/hardSkill/logo-c.svg'},
       },
     },
   },
@@ -134,7 +169,7 @@ export const resources = {
       {
         title: 'Resume',
         description: 'The first project made with pure html and css',
-        preview: '/projects/cv.png',
+        preview: '/static/projects/cv.webp',
         link: 'https://shlokova.github.io/CV-Shlokova/',
         date: '04.11.2021 - 07.11.2021',
         technology: ['CSS', 'HTML'],
@@ -142,7 +177,7 @@ export const resources = {
       {
         title: 'Frontend Marathon',
         description: '5 day front-end development marathon.',
-        preview: '/projects/marathon.png',
+        preview: '/static/projects/marathon.webp',
         link: 'https://github.com/Shlokova/marathon',
         date: '27.11.2021 - 01.12.2021',
         technology: ['HTML', 'JS', 'CSS'],
@@ -151,7 +186,7 @@ export const resources = {
         title: 'Frontend Notes',
         description:
           'Notes on HTML, CSS, JS and React for remembering the most important and interesting moments related to programming',
-        preview: '/projects/notes.png',
+        preview: '/static/projects/notes.webp',
         link: 'https://react-notes-12510.web.app/notes',
         date: '04.11.2021 - 31.01.2022',
         technology: ['React', 'JS', 'CSS', 'Firebase', 'React Hooks'],
@@ -159,7 +194,7 @@ export const resources = {
       {
         title: 'NASA Instagram',
         description: 'Test task for the first job. Similarity to Instagram using data from NASA API.',
-        preview: '/projects/nasa.png',
+        preview: '/static/projects/nasa.webp',
         link: 'https://shlokova.github.io/NASA-Insta-app/',
         date: '03.02.2022 - 06.02.2022',
         technology: ['React', 'JS', 'CSS', 'NASA API', 'React Hooks'],
@@ -168,7 +203,7 @@ export const resources = {
         title: 'Health Helper',
         description:
           'Graduation work from courses on front-end development. SPA application with authorization and work with the database.',
-        preview: '/projects/health.png',
+        preview: '/static/projects/health.webp',
         link: 'https://health-helper-f5470.web.app/',
         date: '12.04.2022 - 11.05.2022',
         technology: ['React', 'TS', 'CSS', 'Firebase', 'React Hooks', 'Redux'],
@@ -181,7 +216,7 @@ export const resources = {
       description:
         'In my free time I like to draw. This is one of the reasons why I chose front-end development as my\n' +
         '            profession. You can see some of my work on ',
-      image: '/insta.png',
+      image: '/insta.webp',
       link: {label: 'Instagram', href: 'https://www.instagram.com/or_ann_ge/?igshid=vfi580tf99gu'},
     },
     article: {
