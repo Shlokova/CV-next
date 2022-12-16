@@ -15,7 +15,9 @@ export default function Document() {
         <meta property="og:description" content="frontend developer" />
         <meta property="og:site_name" content="CV" />
         <meta property="og:type" content="website" />
+        <meta name="theme-color" content="#000000" />
         <link rel="manifest" href="/static/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
