@@ -6,9 +6,9 @@ const nextConfig = {
 };
 
 function createEslint() {
-  return () => ({
+  return {
     dirs: ['pages', 'src'],
-  });
+  };
 }
 
 function createImages() {
