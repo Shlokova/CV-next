@@ -8,6 +8,8 @@ export default function Document() {
         <meta name="description" content={'frontend developer'} />
         <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
         <meta property="og:image" content="/share.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:url" content="https://shlokova-anna.vercel.app/" />
         <meta property="og:title" content="Shlokova Anna" />
