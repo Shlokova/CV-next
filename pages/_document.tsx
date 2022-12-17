@@ -8,11 +8,13 @@ export default function Document() {
         <meta name="description" content={'frontend developer'} />
         <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
         <meta property="og:image" content="/share.webp" />
-        <meta property="og:url" content="https://shlokova-cv.web.app/" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:url" content="https://shlokova-anna.vercel.app/" />
         <meta property="og:title" content="Shlokova Anna" />
         <meta property="og:description" content="frontend developer" />
         <meta property="og:site_name" content="CV" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:title" content="Shlokova Anna" />
         <meta name="twitter:description" content="frontend developer" />
         <meta name="twitter:image" content="/share.webp" />
