@@ -13,7 +13,7 @@ const MainPage = () => (
         {resources.about.subtitle}
         <h1 className={s.name}>{resources.about.title}</h1>
         <div>{resources.about.description}</div>
-        <Button href={'/static/documents/Shlokova_Anna-CV.pdf'} download={true} className={s.button}>
+        <Button href={'/static/documents/Shlokova_Anna-CV.pdf'} primary download={true} className={s.button}>
           {resources.about.buttonText}
         </Button>
       </div>
