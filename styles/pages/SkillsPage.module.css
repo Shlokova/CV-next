@@ -28,15 +28,6 @@
         font-size: 52px;
     }
 }
-
-
-
-.diagramTitle{
-    margin-bottom: 30%;
-}
-
-
-
 .softSkills{
     @media (--mobile-l) {
         border-right: 12px solid var(--border-background-color);
