@@ -28,7 +28,6 @@
         transform: rotate(180deg);
         border-bottom: none;
         border-left: 10px solid var(--main-background-color);
-        opacity: 0.7;
         font-size: 52px;
     }
     @media (--desktop-m) {
@@ -111,7 +110,7 @@
 
 .post{
     font-family: var(--font-cutive);
-    color: #a1a1a1;
+    color: var(--subtext-color);
 }
 .tasks{
     padding-left: 16px;

@@ -1,20 +1,22 @@
+.containerDiagram{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.rightDiagram{
+    margin-top: -28%;
+    margin-left: -24%;
+}
+.leftDiagram{
+    margin-top: -28%;
+    margin-right: -24%;
+}
+
 .diagram{
-    pointer-events: none;
-}
-
-.sector{
-    pointer-events: auto;
-    opacity: 0.7;
-    transition-property: all;
-    transition-duration: 0.5s;
-
-    &:hover{
-        opacity: 0.95;
-        transform: translate(-2px, -2px);
-    }
-}
-
-
-.selected{
-    opacity: 0.89;
+    max-width: 100%;
+    max-height: calc(100vh - 40px);
 }

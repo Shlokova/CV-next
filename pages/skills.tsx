@@ -25,19 +25,7 @@ const SkillsPage: React.FC = () => {
           ))}
         </div>
       </div>
-      {isMobileL ? (
-        <Diagram className={s.diagram} />
-      ) : (
-        <div className={s.containerDiagrams}>
-          <div className={classNames(s.title, s.diagramTitle)}>{resources.skillsPage.HardSkills.title}</div>
-          <div className={s.containerDiagram}>
-            <RightDiagram className={s.rightDiagram} />
-          </div>
-          <div className={s.containerDiagram}>
-            <LeftDiagram className={s.leftDiagram} />
-          </div>
-        </div>
-      )}
+      <Diagram isMobile={isMobileL} />
     </div>
   );
 };

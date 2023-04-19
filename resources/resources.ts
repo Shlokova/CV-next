@@ -109,7 +109,7 @@ export const resources = {
         ],
         technology: ['JS', 'TypeScript', 'React', 'PostCSS', 'NextJs', 'RestApi', 'Vue', 'MobX'],
         post: 'frontend developer',
-        years: 'July 2022 - present',
+        years: 'July 2022 - March 2023',
       },
     ],
   },

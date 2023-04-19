@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content={'frontend developer'} />
+        <meta name="theme-color" content={'#000000'} />
         <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
         <meta property="og:image" content="/share.webp" />
         <meta property="og:image:width" content="1200" />

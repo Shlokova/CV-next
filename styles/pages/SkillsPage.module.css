@@ -29,32 +29,12 @@
     }
 }
 
-.diagram{
-    max-width: 100%;
-    max-height: calc(100vh - 40px);
-}
+
 
 .diagramTitle{
     margin-bottom: 30%;
 }
 
-.containerDiagram{
-    width: 100vw;
-    height: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-.rightDiagram{
-    margin-top: -28%;
-    margin-left: -24%;
-}
-.leftDiagram{
-    margin-top: -28%;
-    margin-right: -24%;
-}
 
 
 .softSkills{
