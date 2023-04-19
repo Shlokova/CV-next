@@ -206,7 +206,7 @@ export const resources = {
         preview: '/static/projects/health.webp',
         link: 'https://health-helper-f5470.web.app/',
         date: '12.04.2022 - 11.05.2022',
-        technology: ['React', 'TS', 'CSS', 'Firebase', 'React Hooks', 'Redux'],
+        technology: ['React', 'TS', 'CSS', 'Redux', 'Firebase', 'React Hooks'],
       },
     ],
   },
