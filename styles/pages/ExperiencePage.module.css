@@ -14,6 +14,11 @@
         height: 100vh;
     }
 }
+.title{
+    @media (--mobile-l) {
+        margin-right: 10px;
+    }
+}
 
 .information{
     display: grid;

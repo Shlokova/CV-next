@@ -4,14 +4,11 @@
     color: var(--light-background-color);
     background: var(--main-background-color);
     padding-left: 20px;
-    border-bottom: 10px solid var(--default-background-color);
     @media (--mobile-l) {
         padding-left: 0;
         writing-mode: vertical-rl;
         text-align: center;
         transform: rotate(180deg);
-        border-bottom: none;
-        border-left: 10px solid var(--default-background-color);
         font-size: 52px;
     }
     @media (--desktop-m) {
