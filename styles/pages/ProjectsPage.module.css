@@ -58,11 +58,9 @@
     grid-template-rows: max-content 1fr;
     width: 100%;
     margin: auto;
-    height: 100%;
+    height: max-content;
     background: var(--main-background-color);
-    @media (--mobile-m) {
-        height: max-content;
-    }
+
     @media (--mobile-l) {
         width: 60%;
     }
@@ -97,7 +95,6 @@
 
 
     @media (--mobile-l) {
-        text-align: start;
         font-size: 16px;
         padding: 20px 30px;
         align-items: center;
@@ -172,7 +169,15 @@
         margin-bottom: 0;
     }
 }
-
+.description{
+    min-height: 80px;
+    @media (--mobile-l) {
+        min-height: 90px;
+    }
+    @media (--desktop) {
+        min-height: initial;
+    }
+}
 .date{
     font-family: 'Cutive Mono', monospace;
     color: #a1a1a1;
