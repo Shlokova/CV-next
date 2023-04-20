@@ -5,12 +5,12 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import {EffectCoverflow, Pagination} from 'swiper';
 import {Image} from '@/ui/kit/Image/Image';
 import {Button} from '@/ui/kit/Button/Button';
+import {Title} from '@/ui/kit/Title/Title';
 
 const ProjectsPage: React.FC = () => {
   return (
     <div className={s.root}>
-      <div className={s.title}>{resources.projectsPage.title}</div>
-
+      <Title text={resources.projectsPage.title} className={s.title} />
       <Swiper
         className={s.swiper}
         effect={'coverflow'}

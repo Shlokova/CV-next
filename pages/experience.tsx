@@ -1,11 +1,12 @@
 import React from 'react';
 import s from '../styles/pages/ExperiencePage.module.css';
 import {resources} from '../resources/resources';
+import {Title} from '@/ui/kit/Title/Title';
 
 const ExperiencePage: React.FC = () => {
   return (
     <div className={s.root}>
-      <div className={s.title}>{resources.experiencePage.title}</div>
+      <Title text={resources.experiencePage.title} className={s.title} />
       <div className={s.information}>
         {resources.experiencePage.information.map((el) => (
           <div className={s.informationItem} key={el.workplace}>

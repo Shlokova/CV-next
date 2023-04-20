@@ -6,7 +6,7 @@
 }
 
 .container::after {
-    background-color: var(--second-background-color);
+    background-color: var(--border-background-color);
     content: '';
     position: absolute;
     left: 100px;

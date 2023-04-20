@@ -31,14 +31,5 @@
     color: var(--light-background-color);
     font-family: 'Monoton', cursive;
     border-bottom: 10px solid var(--border-background-color);
-    @media(--mobile-l){
-        text-align: center;
-        border-bottom:none;
-        border-left: 12px solid var(--border-background-color);
-        font-size: 46px;
-        padding: 0 10px;
-    }
-    @media (--desktop-m) {
-        font-size: 52px;
-    }
+
 }

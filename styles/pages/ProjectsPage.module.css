@@ -8,27 +8,6 @@
         grid-template-columns: max-content 1fr;
     }
 }
-.title{
-    color: var(--light-background-color);
-    background: var(--main-background-color);
-    font-family: var(--font-monoton);
-    font-size: 34px;
-    padding-left: 20px;
-    border-bottom: 10px solid var(--second-background-color);
-    @media (--mobile-l) {
-        padding-left: 0;
-        writing-mode: vertical-rl;
-        text-align: center;
-        transform: rotate(180deg);
-        border-bottom: none;
-        border-left: 10px solid var(--second-background-color);
-        font-size: 52px;
-    }
-    @media (--desktop-m) {
-        font-size: 60px;
-    }
-}
-
 .swiper{
     padding: 40px 10px;
     margin: auto 0;

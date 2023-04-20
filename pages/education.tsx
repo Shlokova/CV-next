@@ -2,6 +2,7 @@ import React from 'react';
 import {resources} from '../resources/resources';
 import s from '../styles/pages/EducationPage.module.css';
 import Timeline from '@/ui/kit/Timeline/Timeline';
+import {Title} from '@/ui/kit/Title/Title';
 
 const EducationPage: React.FC = () => {
   const {educationInfo, title} = resources.educationPage;
@@ -14,7 +15,7 @@ const EducationPage: React.FC = () => {
 
   return (
     <div className={s.root}>
-      <div className={s.title}>{title}</div>
+      <Title text={title} className={s.title} />
       <div className={s.timelineContainer}>
         <Timeline timelineData={timelineData} className={s.timeline} />
       </div>
