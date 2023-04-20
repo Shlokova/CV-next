@@ -2,7 +2,7 @@ import React from 'react';
 import s from '../styles/pages/ProjectsPage.module.css';
 import {resources} from '../resources/resources';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {EffectCoverflow, Pagination} from 'swiper';
+import {EffectCoverflow, Pagination, Navigation} from 'swiper';
 import {Image} from '@/ui/kit/Image/Image';
 import {Button} from '@/ui/kit/Button/Button';
 import {Title} from '@/ui/kit/Title/Title';
@@ -23,8 +23,9 @@ const ProjectsPage: React.FC = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        navigation={true}
+        pagination={{clickable: true}}
+        modules={[EffectCoverflow, Pagination, Navigation]}
       >
         {resources.projectsPage.projects.map((el) => (
           <SwiperSlide key={el.title} className={s.project}>

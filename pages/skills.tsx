@@ -5,9 +5,6 @@ import s from '../styles/pages/SkillsPage.module.css';
 import {resources} from '../resources/resources';
 import {Image} from '@/ui/kit/Image/Image';
 import Diagram from '@/ui/kit/Diagram/Diagram';
-import classNames from 'classnames';
-import {RightDiagram} from '@/ui/kit/Diagram/fragments/RightDiagram';
-import {LeftDiagram} from '@/ui/kit/Diagram/fragments/LeftDiagram';
 
 const SkillsPage: React.FC = () => {
   const isMobileL = useMedia(mobileLargeMediaQuery, false);

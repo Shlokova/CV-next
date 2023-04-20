@@ -1,3 +1,4 @@
+@import "media.css";
 .swiper-3d .swiper-slide-shadow-right{
     background-image: linear-gradient(to right, rgba(23, 23, 23, 0.87),#171717);
 }
@@ -6,6 +7,27 @@
     background-image: linear-gradient(to left, rgba(23, 23, 23, 0.87),#171717);
 }
 
+.swiper-pagination-bullet{
+    background: var(--subtext-color);
+}
+
 .swiper-pagination-bullet-active{
     background: var(--second-background-color);
+}
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+    @media (--mobile-l) {
+        display: initial;
+    }
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--subtext-color);
+    opacity: .2;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
 }
