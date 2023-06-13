@@ -9,7 +9,7 @@ export const resources = {
       {
         img: '/static/contactInfo/linkedin-black.svg',
         label: 'linkedIn',
-        href: 'https://www.linkedin.com/in/anna-shlokova-2b5a99255/',
+        href: 'https://www.linkedin.com/in/anna-shlokova/',
       },
       {
         img: '/static/contactInfo/telegram-black.svg',
