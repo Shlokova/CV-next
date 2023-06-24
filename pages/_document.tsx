@@ -7,7 +7,12 @@ export default function Document() {
       <Head>
         <meta name="description" content={'frontend developer'} />
         <meta name="theme-color" content={'#000000'} />
-        <meta name="keywords" content={'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna'} />
+        <meta
+          name="keywords"
+          content={
+            'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna, Шлокова Анна, Шлокова, Анна'
+          }
+        />
         <meta property="og:image" content="/share.jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
