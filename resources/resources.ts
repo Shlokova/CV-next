@@ -58,7 +58,7 @@ export const resources = {
         university: 'St Petersburg University',
         educationProgram: 'Applied Mathematics, Fundamental Informatics and Programming',
         place: 'Saint Petersburg',
-        years: '2021 - present',
+        years: '2021',
       },
       {
         university: 'BEEINTERNS',
@@ -78,25 +78,16 @@ export const resources = {
     title: 'Experience',
     information: [
       {
-        workplace: 'Modification of the public transport network',
+        workplace: 'Yandex',
         tasks: [
-          'Implementation of a web application for visualizing changes in the public transport network',
-          'Development of functional elements',
+          'Development of a debugger based on the DiscoveryJS library',
+          'Data normalization using normalizr.js',
+          'Development of new components',
+          'Fixing bugs',
         ],
-        technology: ['JS', 'HTML', 'CSS', 'RestAPI'],
+        technology: ['TypeScript', 'React', 'SCSS', 'Hermione', 'DiscoveryJS'],
         post: 'frontend developer',
-        years: 'July 2021',
-      },
-      {
-        workplace: 'ITMO University ',
-        tasks: [
-          'Work on an application that displays real-time occupancy of premises',
-          'Creating a plugin for Grafana',
-          'Project refactoring',
-        ],
-        technology: ['React', 'Grafana', 'Vue', 'TypeScript', 'JS', 'SCSS', 'RestAPI'],
-        post: 'frontend developer',
-        years: 'February - July 2022',
+        years: 'July - October 2023',
       },
       {
         workplace: 'Tinkoff',
@@ -110,6 +101,27 @@ export const resources = {
         technology: ['JS', 'TypeScript', 'React', 'PostCSS', 'NextJs', 'RestApi', 'Vue', 'MobX'],
         post: 'frontend developer',
         years: 'July 2022 - March 2023',
+      },
+      {
+        workplace: 'ITMO University ',
+        tasks: [
+          'Work on an application that displays real-time occupancy of premises',
+          'Creating a plugin for Grafana',
+          'Project refactoring',
+        ],
+        technology: ['React', 'Grafana', 'Vue', 'TypeScript', 'JS', 'SCSS', 'RestAPI'],
+        post: 'frontend developer',
+        years: 'February - July 2022',
+      },
+      {
+        workplace: 'Modification of the public transport network',
+        tasks: [
+          'Implementation of a web application for visualizing changes in the public transport network',
+          'Development of functional elements',
+        ],
+        technology: ['JS', 'HTML', 'CSS', 'RestAPI'],
+        post: 'frontend developer',
+        years: 'July 2021',
       },
     ],
   },
