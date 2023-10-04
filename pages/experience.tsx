@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {useEffect, useRef, useState} from 'react';
 import s from '../styles/pages/ExperiencePage.module.css';
 import {resources} from '../resources/resources';
 import {Title} from '@/ui/kit/Title/Title';
@@ -15,7 +15,7 @@ const ExperiencePage: React.FC = () => {
 
     if (ref.current.scrollTop === 0) {
       setIsUpButton(false);
-    } else if (ref.current?.scrollTop + ref.current?.clientHeight){
+    } else if (ref.current?.scrollTop + ref.current?.clientHeight) {
       setIsUpButton(true);
     }
   };
@@ -27,8 +27,7 @@ const ExperiencePage: React.FC = () => {
       if (ref.current.scrollHeight > ref.current.clientHeight) {
         setTopVisible(true);
       }
-    };
-
+    }
   }, []);
 
   const scrollTo = () => {
