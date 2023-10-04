@@ -8,16 +8,21 @@ const ExperiencePage: React.FC = () => {
   const [topVisible, setTopVisible] = useState(false);
   const [isUpButton, setIsUpButton] = useState(false);
 
+  const scrollListener = () => {
+    if (!ref.current) {
+      return;
+    }
+
+    if (ref.current.scrollTop === 0) {
+      setIsUpButton(false);
+    } else if (ref.current?.scrollTop + ref.current?.clientHeight){
+      setIsUpButton(true);
+    }
+  };
+
   useEffect(() => {
     if (ref.current) {
-
-      ref.current.addEventListener('scroll',()=>{
-        if (ref.current?.scrollTop === 0){
-          setIsUpButton(false);
-        } else if (ref.current?.scrollTop + ref.current?.clientHeight){
-          setIsUpButton(true);
-        }
-      });
+      ref.current.addEventListener('scroll', scrollListener);
 
       if (ref.current.scrollHeight > ref.current.clientHeight) {
         setTopVisible(true);
@@ -26,7 +31,7 @@ const ExperiencePage: React.FC = () => {
 
   }, []);
 
-  const scroll = () => {
+  const scrollTo = () => {
     ref.current &&
       ref.current.scrollTo({
         top: isUpButton ? 0 : ref.current.scrollHeight,
@@ -34,6 +39,7 @@ const ExperiencePage: React.FC = () => {
       });
   };
 
+  // @ts-ignore
   return (
     <div className={s.root}>
       <Title text={resources.experiencePage.title} className={s.title} />
@@ -52,9 +58,9 @@ const ExperiencePage: React.FC = () => {
             </div>
           </div>
         ))}
-        {
-          topVisible && <button className={[s.moreButton, isUpButton ? s.buttonUp : s.buttonDown].join(' ')} onClick={scroll}/>
-        }
+        {topVisible && (
+          <button className={[s.moreButton, isUpButton ? s.buttonUp : s.buttonDown].join(' ')} onClick={scrollTo} />
+        )}
       </div>
     </div>
   );
