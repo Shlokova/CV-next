@@ -31,7 +31,7 @@ export const resources = {
     subtitle: 'frontend developer',
     image: '/static/about/photo.webp',
     description:
-      'Sociable and hardworking front-end developer with 1 years of experience in website development. Highly skilled in HTML/CSS/JavaScript/React and working knowledge of Photoshop and Figma.',
+      'Sociable and hardworking front-end developer with 2 years of experience in website development. Highly skilled in HTML/CSS/JavaScript/React and working knowledge of Photoshop and Figma.',
     buttonText: 'Download cv',
     info: {
       title: 'What I do',
