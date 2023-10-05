@@ -27,7 +27,10 @@
     color: var(--light-background-color);
     @media (--desktop) {
         overflow: auto;
+        -ms-overflow-style: none;
     }
+
+    &::-webkit-scrollbar { width: 0; }
 }
 
 .informationItem{
@@ -103,11 +106,18 @@
     position: fixed;
     background: none;
     border: none;
-    bottom: 20px;
     left: 50%;
     display: none;
     opacity: 0.2;
     justify-content: center;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &::after {
+        content: url("/static/navigation/down.svg");
+    }
 
     @media (--mobile-l) {
         display: flex;
@@ -121,16 +131,10 @@
 
 .buttonDown{
     transform: translateX(-50%) rotate(0deg);
+    bottom: 20px;
 }
 
 .buttonUp{
     transform: translateX(-50%) rotate(180deg);
-}
-
-.moreButton::after {
-    content: url("/static/navigation/down.svg");
-}
-
-.moreButton:hover {
-    opacity: 0.6;
+    top: 20px;
 }

@@ -5,18 +5,24 @@ import {Title} from '@/ui/kit/Title/Title';
 
 const ExperiencePage: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const [topVisible, setTopVisible] = useState(false);
-  const [isUpButton, setIsUpButton] = useState(false);
+  const [topButtonVisible, setTopButtonVisible] = useState(false);
+  const [bottomButtonVisible, setBottomButtonVisible] = useState(true);
 
   const scrollListener = () => {
     if (!ref.current) {
       return;
     }
 
-    if (ref.current.scrollTop === 0) {
-      setIsUpButton(false);
-    } else if (ref.current?.scrollTop + ref.current?.clientHeight) {
-      setIsUpButton(true);
+    if (ref.current.scrollTop < 5) {
+      setTopButtonVisible(false);
+    } else {
+      setTopButtonVisible(true);
+    }
+
+    if (ref.current.scrollTop + ref.current.clientHeight === ref.current.scrollHeight) {
+      setBottomButtonVisible(false);
+    } else {
+      setBottomButtonVisible(true);
     }
   };
 
@@ -24,13 +30,13 @@ const ExperiencePage: React.FC = () => {
     if (ref.current) {
       ref.current.addEventListener('scroll', scrollListener);
 
-      if (ref.current.scrollHeight > ref.current.clientHeight) {
-        setTopVisible(true);
+      if (ref.current.scrollHeight <= ref.current.clientHeight) {
+        setTopButtonVisible(false);
       }
     }
   }, []);
 
-  const scrollTo = () => {
+  const scrollTo = (isUpButton: boolean) => {
     ref.current &&
       ref.current.scrollTo({
         top: isUpButton ? 0 : ref.current.scrollHeight,
@@ -38,7 +44,6 @@ const ExperiencePage: React.FC = () => {
       });
   };
 
-  // @ts-ignore
   return (
     <div className={s.root}>
       <Title text={resources.experiencePage.title} className={s.title} />
@@ -57,10 +62,11 @@ const ExperiencePage: React.FC = () => {
             </div>
           </div>
         ))}
-        {topVisible && (
-          <button className={[s.moreButton, isUpButton ? s.buttonUp : s.buttonDown].join(' ')} onClick={scrollTo} />
-        )}
       </div>
+      {topButtonVisible && <button className={[s.moreButton, s.buttonUp].join(' ')} onClick={() => scrollTo(true)} />}
+      {bottomButtonVisible && (
+        <button className={[s.moreButton, s.buttonDown].join(' ')} onClick={() => scrollTo(false)} />
+      )}
     </div>
   );
 };

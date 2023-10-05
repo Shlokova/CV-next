@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4be4ce-3210-4d79-87f6-7566022bf933" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/static/navigation/Shlokova_Anna-CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages/ExperiencePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages/ExperiencePage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/anna/Documents/projects/cv/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "settings.css.dialects",
     "ts.external.directory.path": "/Users/anna/Documents/projects/cv/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -148,7 +151,7 @@
       <workItem from="1682672156341" duration="604000" />
       <workItem from="1686646584552" duration="3216000" />
       <workItem from="1687891809131" duration="1491000" />
-      <workItem from="1696420205336" duration="9360000" />
+      <workItem from="1696420205336" duration="11778000" />
     </task>
     <servers />
   </component>
