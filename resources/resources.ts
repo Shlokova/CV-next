@@ -78,6 +78,13 @@ export const resources = {
     title: 'Experience',
     information: [
       {
+        workplace: 'Laksheri-Kotaksheri',
+        tasks: ['Platform game development using pixi.js'],
+        technology: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'Pixi.js', 'Tiled'],
+        post: 'frontend developer',
+        years: 'October 2023 - Present',
+      },
+      {
         workplace: 'Yandex',
         tasks: [
           'Development of a debugger based on the DiscoveryJS library',

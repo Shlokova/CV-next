@@ -119,12 +119,8 @@
         content: url("/static/navigation/down.svg");
     }
 
-    @media (--mobile-l) {
-        display: flex;
-        left: calc(50% + 55px);
-    }
-
     @media (--desktop) {
+        display: flex;
         left: calc(50% + 149px);
     }
 }

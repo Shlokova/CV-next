@@ -19,7 +19,7 @@ const ExperiencePage: React.FC = () => {
       setTopButtonVisible(true);
     }
 
-    if (ref.current.scrollTop + ref.current.clientHeight === ref.current.scrollHeight) {
+    if (ref.current.scrollTop + ref.current.clientHeight >= ref.current.scrollHeight - 5) {
       setBottomButtonVisible(false);
     } else {
       setBottomButtonVisible(true);
