@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/global.css';
 import {Layout} from '../src/ui/kit/Layout/Layout';
 import Head from 'next/head';
+import {Analytics} from '@vercel/analytics/react';
 import {ErrorBoundary} from '@/ui/common/ErrorBoundary/ErrorBoundary';
 
 export default function MyApp({Component, pageProps}: AppProps) {
@@ -15,6 +16,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        <Analytics />
       </ErrorBoundary>
     </React.Fragment>
   );
