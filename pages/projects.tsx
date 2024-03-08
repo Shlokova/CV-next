@@ -27,7 +27,7 @@ const ProjectsPage: React.FC = () => {
         pagination={{clickable: true}}
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
-        {resources.projectsPage.projects.map((el) => (
+        {[...resources.projectsPage.projects].reverse().map((el) => (
           <SwiperSlide key={el.title} className={s.project}>
             <Image className={s.preview} src={el.preview} alt="" width={1200} height={600} />
             <div className={s.information}>
