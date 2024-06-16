@@ -79,8 +79,25 @@ export const resources = {
     information: [
       {
         workplace: 'Laksheri-Kotaksheri',
-        tasks: ['Platform game development using pixi.js'],
-        technology: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'Pixi.js', 'Tiled'],
+        tasks: [
+          'Platform game development using pixi.js',
+          'Development of a game similar to Zuma on Pixi.js',
+          'Development of an admin panel for creating a world and levels (React, MobX, Pixi.js, Antd)',
+          'API development (Nest.js, typeORM, swagger)',
+        ],
+        technology: [
+          'TypeScript',
+          'JavaScript',
+          'HTML',
+          'CSS',
+          'Pixi.js',
+          'Tiled',
+          'Spine',
+          'React',
+          'MobX',
+          'Nest.js',
+          'typeORM',
+        ],
         post: 'frontend developer',
         years: 'October 2023 - Present',
       },
