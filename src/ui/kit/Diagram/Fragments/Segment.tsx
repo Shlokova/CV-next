@@ -82,6 +82,7 @@ export const Segment = ({
       }}
     >
       <Spring to={props}>
+        {/* @ts-ignore */}
         {(props) => (
           <Sprite texture={Texture.EMPTY} {...props}>
             <Graphics
