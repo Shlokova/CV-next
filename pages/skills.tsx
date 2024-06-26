@@ -1,14 +1,10 @@
 import React from 'react';
-import {useMedia} from 'react-use';
-import {mobileLargeMediaQuery} from '@/constants';
 import s from '../styles/pages/SkillsPage.module.css';
 import {resources} from '../resources/resources';
 import {Image} from '@/ui/kit/Image/Image';
-import Diagram from '@/ui/kit/Diagram/Diagram';
+import {Diagram} from '@/ui/kit/Diagram/Diagram';
 
 const SkillsPage: React.FC = () => {
-  const isMobileL = useMedia(mobileLargeMediaQuery, false);
-
   return (
     <div className={s.root}>
       <div className={s.softSkills}>
@@ -22,7 +18,7 @@ const SkillsPage: React.FC = () => {
           ))}
         </div>
       </div>
-      <Diagram isMobile={isMobileL} />
+      <Diagram />
     </div>
   );
 };
