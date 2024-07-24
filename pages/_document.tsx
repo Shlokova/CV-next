@@ -10,7 +10,7 @@ export default function Document() {
         <meta
           name="keywords"
           content={
-            'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna, Шлокова Анна, Шлокова, Анна'
+            'frontend, frontend developer, CV, resume, Shlokova, Anna, Shlokova Anna, Шлокова Анна, Playable Ads, Game Developer, HTML5 developer, Pixi.js, Phaser.js, Cocos Creator, React, Next.js, TypeScript, Spine'
           }
         />
         <meta property="og:image" content="/share.jpeg" />
